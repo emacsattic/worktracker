@@ -1,0 +1,46 @@
+About
+=====
+
+worktracker.el serves as an upgrade to timeclock.el, providing
+interactive functions using ido to clock into a project from a
+specified list, for a given type of task, and given reasons for
+clocking out. It supports the notion of being interrupted. Everything
+is saved to a log file.
+
+Suggested .emacs setup
+===============
+
+;; Work tracker
+(load "worktracker.el")
+;;; Clock into project
+(global-set-key [f9] 'work-clockin)
+;;; Clock out of project (done)
+(global-set-key [f10] 'work-clockout)
+;;; Pause project (interrupted)
+(global-set-key [f12] 'work-interrupted) ;; f12 is hardest to mispress
+;;; Resume project
+(global-set-key [f11] 'work-resume)
+
+Customization
+=============
+
+Edit the following regions at the top of worktracker.el:
+
+Common reasons for clocking out
+
+    (defvar *worktracker-clockout-reasons*
+      '("Done" "Interrupted" "Break" "Home" "Leaving" "Waiting"))
+
+Common reasons for clocking in
+
+    (defvar *worktracker-worktypes*
+      '("Dev" "Fix" "NonFunc" "Chase"))
+
+Common causes for interruptions (i.e. people)
+
+    (defvar *worktracker-interrupters*
+      '("Michael" "James" "Jannet" "Dave"))
+
+Log file location
+
+    (defvar *worktracker-log-file* "~/.worktracker.log")
