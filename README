@@ -7,6 +7,11 @@ specified list, for a given type of task, and given reasons for
 clocking out. It supports the notion of being interrupted. Everything
 is saved to a log file.
 
+Video
+=====
+
+See demonstration video here: http://www.youtube.com/watch?v=0U_lUHQekpU
+
 Suggested .emacs setup
 ===============
 
