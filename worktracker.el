@@ -16,7 +16,7 @@
 
 ;; Configuration
 ;;; Projects
-(defvar *worktracker-projects* '("Isylan"))
+(defvar *worktracker-projects* '("Northwood Bonbles" "Barnes and Needles"))
 ;; or
 ;; (load "jobs.el")
 
@@ -30,7 +30,7 @@
 
 ;;; Common causes for interruptions (i.e. people)
 (defvar *worktracker-interrupters*
-  '("Andy" "Justin" "Paul" "Cheryl" "Stefan" "Chris" "Sheila" "Phil" "Client"))
+  '("Michael" "James" "Jannet" "Dave"))
 
 ;;; Log file location
 (defvar *worktracker-log-file* "~/.worktracker.log")
