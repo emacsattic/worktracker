@@ -1,6 +1,10 @@
-;; Simple interactive work tracker similar to timeclock.el.
+;;; worktracker.el --- Simple interactive work tracker
 ;;
 ;; Chris Done 2009, Public domain
+;;
+;;; Commentary:
+;;
+;; Simple interactive work tracker similar to timeclock.el.
 ;;
 ;; Suggested setup:
 ;; ;; Work tracker
@@ -13,6 +17,8 @@
 ;; (global-set-key [f12] 'work-interrupted) ;; f12 is hardest to mispress
 ;; ;;; Resume project
 ;; (global-set-key [f11] 'work-resume)
+
+;;; Code:
 
 ;; Configuration
 ;;; Projects
