@@ -77,9 +77,8 @@
 
 (defun work-resume ()
   "Resume the recently clocked out project."
-  (lambda ()
-    (interactive)
-    (work-clockin *worktracker-lastproject* *worktracker-lasttype*)))
+  (interactive)
+  (work-clockin *worktracker-lastproject* *worktracker-lasttype*))
 
 ;; Helper functions
 (defun check-and-maybe-clockin (project reason)
