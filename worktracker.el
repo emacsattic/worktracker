@@ -132,3 +132,5 @@
                     "\n"))
     (save-buffer)
     (switch-to-buffer buffer)))
+
+(provide 'worktracker)
