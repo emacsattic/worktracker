@@ -2,6 +2,8 @@
 ;;
 ;; Chris Done 2009, Public domain
 ;;
+;; License: public-domain
+;;
 ;;; Commentary:
 ;;
 ;; Simple interactive work tracker similar to timeclock.el.
